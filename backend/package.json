@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "this is an online video calling and coding platform",
+  "main": "src/server.js",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "type": "module",
+  "author": "anish dey",
+  "license": "ISC"
+}
