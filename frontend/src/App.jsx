@@ -7,8 +7,9 @@ function App() {
       <h1>Welcome to CodeMeet</h1>
 
       <SignedOut>
-        <SignInButton mode="modal" />
-        <button>Login</button>
+        <SignInButton mode="modal">
+          <button>Login</button>
+        </SignInButton>
       </SignedOut>
 
       <SignedIn>
