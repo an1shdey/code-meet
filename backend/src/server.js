@@ -1,5 +1,5 @@
 import express from "express";
-import path from "path";
+// import path from "path";
 import cors from "cors";
 import { serve } from "inngest/express";
 
@@ -16,7 +16,7 @@ app.use(express.json());
 // credentials:true meaning?? => server allows a browser to include cookies on request
 app.use(cors({ origin: ENV.CLIENT_URL, credentials: true }));
 
-app.use("api/inngest", serve({ client:inngest, functions }));
+app.use("/api/inngest", serve({ client: inngest, functions }));
 
 app.get("/health", (req, res) => {
   res.status(200).json({ msg: "api is up and running" });
